@@ -5,7 +5,6 @@ const port = 3000;
 const app = express()
 //const id = 'abc'
 
-
 app.use(express.static('public'));
 app.engine('handlebars',exphbs({defaultLayout:'main'}));
 app.set('view engine', 'handlebars');
@@ -34,14 +33,14 @@ app.get('/france',(req,res)=>{
 app.get('/English',(req,res)=>{
     res.render('English',{
         pageTitle: "Hello",
-        title: "ça va ?"
+        title: "what's up man?"
     });
 })
 
 app.get('/Espanol',(req,res)=>{
     res.render('Espanol',{
         pageTitle: "Hola",
-        title: "ça va ?"
+        title: "Como estas  ?"
     });
 })
 
